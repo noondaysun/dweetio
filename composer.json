@@ -1,0 +1,21 @@
+{
+    "name": "noondaysun/dweetio",
+    "type": "package",
+    "description": "Send and recieve messages from https://dweet.io.",
+    "homepage": "https://github.com/noondaysun/dweetio",
+    "license": "GNU GPL v2.0",
+    "autoload": {
+        "psr-4": {
+            "Noondaysun\\Dweetio\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noondaysun\\Dweetio\\": "tests/"
+        }
+    },
+    "require": {
+        "pds/skeleton": "@dev",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
