@@ -108,6 +108,10 @@ class Dweetio_Client
 			$res = $this->_client->request('GET', $uri, []);
 			if ($res->getStatusCode() === 200) {
 				$body = json_decode($res->getBody());
+				if ($body->this === "failed") {
+					$this->_logger->err("Error: " . $body->because);
+					return new \stdClass();
+				}
 				return $body;
 			} else {
 				$this->_logger->err("Invalid response code returned. HTTP Response code returned: " . $res->getStatusCode());
@@ -126,6 +130,10 @@ class Dweetio_Client
                         $res = $this->_client->request('GET', $uri, []);
                         if ($res->getStatusCode() === 200) {
                                 $body = json_decode($res->getBody());
+				if ($body->this === "failed") {
+                                        $this->_logger->err("Error: " . $body->because);
+                                        return new \stdClass();
+                                }
                                 return $body;
                         } else {
                                 $this->_logger->err("Invalid response code returned. HTTP Response code returned: " . $res->getStatusCode());
