@@ -16,6 +16,7 @@
     },
     "require": {
         "pds/skeleton": "@dev",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "zendframework/zend-log": "^2.9"
     }
 }
