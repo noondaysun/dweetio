@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2017-03-02 09:13:31</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>17</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>70</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getBaseUri</methodName>
+      <methodSignature>getBaseUri() :string</methodSignature>
+      <fullMethod>getBaseUri() :string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getClient</methodName>
+      <methodSignature>getClient() :\GuzzleHttp\Client</methodSignature>
+      <fullMethod>getClient() :\GuzzleHttp\Client</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>setBaseUri</methodName>
+      <methodSignature>setBaseUri(string $uri)</methodSignature>
+      <fullMethod>setBaseUri(string $uri)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>setClient</methodName>
+      <methodSignature>setClient(\GuzzleHttp\Client $client)</methodSignature>
+      <fullMethod>setClient(\GuzzleHttp\Client $client)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(string $thing) :mixed</methodSignature>
+      <fullMethod>lock(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(string $thing) :mixed</methodSignature>
+      <fullMethod>unlock(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>removeLock</methodName>
+      <methodSignature>removeLock(string $lock) :mixed</methodSignature>
+      <fullMethod>removeLock(string $lock) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>dweetFor</methodName>
+      <methodSignature>dweetFor(string $thing, array $content, bool $quietly) :mixed</methodSignature>
+      <fullMethod>dweetFor(string $thing, array $content, bool $quietly) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getLatestDweetFor</methodName>
+      <methodSignature>getLatestDweetFor(string $thing, string $key = '') :\stdClass</methodSignature>
+      <fullMethod>getLatestDweetFor(string $thing, string $key = '') :\stdClass</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getDweetsFor</methodName>
+      <methodSignature>getDweetsFor(string $thing) :\stdClass</methodSignature>
+      <fullMethod>getDweetsFor(string $thing) :\stdClass</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>listenForDweetsFrom</methodName>
+      <methodSignature>listenForDweetsFrom(string $thing) :\Object</methodSignature>
+      <fullMethod>listenForDweetsFrom(string $thing) :\Object</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getStoredDweetsFor</methodName>
+      <methodSignature>getStoredDweetsFor(string $thing) :mixed</methodSignature>
+      <fullMethod>getStoredDweetsFor(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getStoredAlertsFor</methodName>
+      <methodSignature>getStoredAlertsFor(string $thing) :mixed</methodSignature>
+      <fullMethod>getStoredAlertsFor(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>alert</methodName>
+      <methodSignature>alert(string $who, string $when, string $condition, string $key = "") :mixed</methodSignature>
+      <fullMethod>alert(string $who, string $when, string $condition, string $key = "") :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getAlertFor</methodName>
+      <methodSignature>getAlertFor(string $thing) :mixed</methodSignature>
+      <fullMethod>getAlertFor(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>removeAlertFor</methodName>
+      <methodSignature>removeAlertFor(string $thing) :mixed</methodSignature>
+      <fullMethod>removeAlertFor(string $thing) :mixed</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

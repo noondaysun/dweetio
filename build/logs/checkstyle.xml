@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.5.1">
+<file name="/home/feighen/workspace/dweetio/src/Dweetio.php">
+ <error line="2" column="1" severity="error" message="Missing file doc comment" source="PEAR.Commenting.FileComment.Missing"/>
+ <error line="5" column="1" severity="error" message="File is being unconditionally included; use &quot;require_once&quot; instead" source="PEAR.Files.IncludingFile.UseRequireOnce"/>
+ <error line="5" column="22" severity="error" message="Space after opening parenthesis of function call prohibited" source="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+ <error line="5" column="22" severity="error" message="Expected 0 spaces before closing bracket; 1 found" source="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+ <error line="9" column="1" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="11" column="4" severity="error" message="The tag in position 1 should be the @package tag" source="PEAR.Commenting.ClassComment.PackageTagOrder"/>
+ <error line="12" column="4" severity="error" message="The tag in position 2 should be the @author tag" source="PEAR.Commenting.ClassComment.AuthorTagOrder"/>
+ <error line="13" column="4" severity="error" message="The tag in position 3 should be the @license tag" source="PEAR.Commenting.ClassComment.LicenseTagOrder"/>
+ <error line="14" column="2" severity="error" message="Missing @category tag in class comment" source="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
+ <error line="14" column="2" severity="error" message="Missing @link tag in class comment" source="PEAR.Commenting.ClassComment.MissingLinkTag"/>
+ <error line="17" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="17" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="18" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="18" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="18" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="19" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="20" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="21" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="22" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="22" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="22" column="12" severity="error" message="Protected member variable &quot;_baseUri&quot; must not be prefixed with an underscore" source="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
+ <error line="24" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="24" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="24" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="25" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="26" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="27" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="28" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="28" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="28" column="12" severity="error" message="Protected member variable &quot;_client&quot; must not be prefixed with an underscore" source="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
+ <error line="29" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="30" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="30" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="30" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="31" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="32" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="33" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="34" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="34" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="34" column="12" severity="error" message="Protected member variable &quot;_logger&quot; must not be prefixed with an underscore" source="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
+ <error line="35" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="35" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="36" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="36" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="37" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="37" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="38" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="38" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="38" column="9" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="39" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="39" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="40" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="40" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="41" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="41" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="42" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="42" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="43" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="43" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="44" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="44" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="45" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="45" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="46" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="46" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="47" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="47" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="48" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="48" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="49" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="49" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="50" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="50" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="50" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="51" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="52" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="53" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="53" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="54" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="54" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="55" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="55" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="56" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="56" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="57" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="58" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="58" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="58" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="59" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="60" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="61" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="61" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="62" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="62" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="63" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="63" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="64" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="64" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="65" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="66" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="66" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="66" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="67" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="67" column="5" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="68" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="68" column="3" severity="error" message="Missing @return tag in function comment" source="PEAR.Commenting.FunctionComment.MissingReturn"/>
+ <error line="69" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="69" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="70" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="70" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="71" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="71" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="72" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="72" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="73" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="74" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="74" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="74" column="2" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="75" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="75" column="5" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="76" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="76" column="3" severity="error" message="Missing @return tag in function comment" source="PEAR.Commenting.FunctionComment.MissingReturn"/>
+ <error line="77" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="77" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="78" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="78" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="79" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="79" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="80" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="80" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="81" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="81" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="82" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="82" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="83" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="83" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="83" column="9" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="84" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="84" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="85" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="85" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="85" column="40" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="86" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="86" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="88" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="88" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="88" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="89" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="89" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="91" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="91" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="93" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="93" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="93" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="94" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="94" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="96" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="96" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="97" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="97" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="98" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="98" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="99" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="99" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="99" column="9" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="100" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="100" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="101" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="102" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="102" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="103" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="104" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="104" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="104" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="105" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="105" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="106" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="106" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="107" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="107" column="3" severity="error" message="Line indented incorrectly; expected 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="108" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="108" column="4" severity="error" message="Line indented incorrectly; expected at least 12 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="109" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="109" column="4" severity="error" message="Line indented incorrectly; expected 12 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="110" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="110" column="5" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 4" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="111" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="111" column="5" severity="error" message="Line indented incorrectly; expected 16 spaces, found 4" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="112" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="112" column="6" severity="error" message="Line indented incorrectly; expected at least 20 spaces, found 5" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="113" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="113" column="6" severity="error" message="Line indented incorrectly; expected at least 20 spaces, found 5" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="114" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="115" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="116" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="116" column="4" severity="error" message="Line indented incorrectly; expected 4 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="117" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="117" column="5" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 4" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="117" column="113" severity="warning" message="Line exceeds 85 characters; contains 113 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="118" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="119" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="119" column="4" severity="error" message="Line indented incorrectly; expected 4 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="120" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="120" column="3" severity="error" message="Line indented incorrectly; expected 4 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="121" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="121" column="4" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="122" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="122" column="4" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 3" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="123" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="123" column="3" severity="error" message="Line indented incorrectly; expected 4 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="124" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="124" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="125" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="126" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="126" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="126" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="127" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="127" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="128" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="128" column="3" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 2" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="129" column="17" severity="error" message="Line indented incorrectly; expected 8 spaces, found 16" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="131" column="25" severity="error" message="Line indented incorrectly; expected 12 spaces, found 24" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="133" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="133" column="5" severity="error" message="Line indented incorrectly; expected 16 spaces, found 4" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="134" column="88" severity="warning" message="Line exceeds 85 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="136" column="33" severity="error" message="Line indented incorrectly; expected 4 spaces, found 32" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="136" column="33" severity="error" message="Closing brace indented incorrectly; expected 4 spaces, found 32" source="PEAR.WhiteSpace.ScopeClosingBrace.Indent"/>
+ <error line="139" column="141" severity="warning" message="Line exceeds 85 characters; contains 141 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="145" column="18" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="146" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="146" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="147" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="148" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="148" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="148" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="149" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="149" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="150" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="151" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="151" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="152" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="152" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="153" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="153" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="154" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="154" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="154" column="9" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="155" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="155" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="157" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="157" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="159" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="159" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="159" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="160" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="160" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="162" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="162" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="163" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="163" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="164" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="164" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="165" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="165" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="165" column="9" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="165" column="89" severity="warning" message="Line exceeds 85 characters; contains 93 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="166" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="166" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="168" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="168" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="170" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="170" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="170" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="171" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="171" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="173" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="173" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="175" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="175" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="175" column="9" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="176" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="176" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="177" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="178" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="178" column="2" severity="error" message="Line indented incorrectly; expected 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="179" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="179" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="180" column="1" severity="error" message="Spaces must be used for alignment; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+ <error line="180" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+</file>
+</checkstyle>
+

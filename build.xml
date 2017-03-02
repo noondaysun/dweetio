@@ -20,7 +20,7 @@
 
 	<target name="composer" description="Update composer packages with composer.phar">
 		<exec logoutput="true"
-		      command="composer update --dev" />
+		      command="composer update --dev --optimize-autoloader" />
 	 </target>
 
 	<target name="phpunit" description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
