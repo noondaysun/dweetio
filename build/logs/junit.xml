@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="dweetio" tests="2" assertions="0" failures="0" errors="2" time="0.002739">
+    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="2" assertions="0" failures="0" errors="2" time="0.002739">
+      <testcase name="testDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="34" assertions="0" time="0.001301">
+        <error type="PHPUnit_Framework_ExceptionWrapper">Noondaysun\Dweetio\Tests\DweetioTest::testDweetingFor
+Error: Call to undefined method Noondaysun\Dweetio\Tests\DweetioTest::dweet()
+
+/home/feighen/workspace/dweetio/tests/DweetioTest.php:36
+</error>
+      </testcase>
+      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="42" assertions="0" time="0.001438">
+        <error type="PHPUnit_Framework_ExceptionWrapper">Noondaysun\Dweetio\Tests\DweetioTest::testQuietlyDweetingFor
+Error: Call to undefined method Noondaysun\Dweetio\Tests\DweetioTest::dweet()
+
+/home/feighen/workspace/dweetio/tests/DweetioTest.php:44
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
