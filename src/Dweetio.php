@@ -36,10 +36,22 @@ class Dweetio_Client
      */
     protected $_logger;
 
+    /**
+     *
+     * @var string
+     */
     protected $_thing;
 
+    /**
+     *
+     * @var string
+     */
     protected $_lock;
 
+    /**
+     *
+     * @var string
+     */
     protected $_key;
     // : End
     // : Public functions
