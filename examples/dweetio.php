@@ -12,14 +12,17 @@ $dweet = new \Noondaysun\Dweetio\Dweetio_Client();
 
 $thing = (string) $argv[1] ?? 'temperature';
 
-$latest = $dweet->getLatestDweetFor($thing);
+$dweet->setThing($thing);
+
+$latest = $dweet->getLatestDweetFor();
 var_dump($latest);
 
-$dweets = $dweet->getDweetsFor($thing);
-var_dump($dweets);
+// $dweets = $dweet->getDweetsFor();
+// var_dump($dweets);
 
 $content = (array) [
     'test' => 'number'
 ];
-$success = $dweet->dweetFor($thing, $content, false);
+$dweet->setContent($content);
+// $success = $dweet->dweetFor(false);
 var_dump($success);

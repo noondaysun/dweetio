@@ -53,6 +53,18 @@ class Dweetio_Client
      * @var string
      */
     protected $_key;
+
+    /**
+     *
+     * @var array
+     */
+    protected $_content;
+
+    /**
+     *
+     * @var bool
+     */
+    protected $_quietly;
     // : End
     // : Public functions
     // : Magic
@@ -65,7 +77,7 @@ class Dweetio_Client
      *            'thing' => 'billy-bobs-battery-operated-billy-goat'
      *            ]
      */
-    public function __construct(array $params)
+    public function __construct(array $params = array())
     {
         // : Setup
         // : Set the HTTP Client Library
@@ -77,7 +89,21 @@ class Dweetio_Client
         $this->_logger = $logger;
         // : End
         // : Accessors
-        
+        if (array_key_exists('thing', $params)) {
+            $this->setThing($params['thing']);
+        }
+        if (array_key_exists('lock', $params)) {
+            $this->setLock($params['lock']);
+        }
+        if (array_key_exists('key', $params)) {
+            $this->setKey($params['key']);
+        }
+        if (array_key_exists('content', $params)) {
+            $this->setContent($params['content']);
+        }
+        if (array_key_exists('quietly', $params)) {
+            $this->setQuietly($params['quietly']);
+        }
         // : End
     }
     // : End
@@ -98,6 +124,24 @@ class Dweetio_Client
     public function getClient(): \GuzzleHttp\Client
     {
         return $this->_client;
+    }
+
+    /**
+     *
+     * @return array
+     */
+    public function getContent(): array
+    {
+        return $this->_content;
+    }
+
+    /**
+     *
+     * @return bool
+     */
+    public function getQuietly(): bool
+    {
+        return $this->_quietly;
     }
 
     /**
@@ -127,6 +171,29 @@ class Dweetio_Client
         $this->_client = $client;
     }
 
+    /**
+     *
+     * @param array $content
+     */
+    public function setContent(array $content)
+    {
+        $this->_content = $content;
+    }
+
+    /**
+     *
+     * @param bool $quietly
+     *            IF TRUE Create a dweet for a thing. This method differs from /dweet/for/{thing} only in that successful dweets result in an HTTP 204 response rather than the typical verbose response.
+     */
+    public function setQuietly(bool $quietly)
+    {
+        $this->_quietly = $quietly;
+    }
+
+    /**
+     *
+     * @param string $thing
+     */
     public function setThing(string $thing)
     {
         $this->_thing = $thing;
@@ -135,9 +202,6 @@ class Dweetio_Client
     // : Locks
     /**
      *
-     * @param string $thing
-     * @param string $lock
-     * @param string $key
      * @return \stdClass
      */
     public function lock(): \stdClass
@@ -155,25 +219,21 @@ class Dweetio_Client
 
     /**
      *
-     * @param string $thing
-     * @param string $key
      * @return \stdClass
      */
-    public function unlock(string $thing, string $key): \stdClass
+    public function unlock(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/unlock/' . $thing . '?key=' . $key;
+        $uri = (string) $this->_baseUri . '/unlock/' . $this->_thing . '?key=' . $this->_key;
         return $this->doRequest($uri);
     }
 
     /**
      *
-     * @param string $lock
-     * @param string $key
      * @return \stdClass
      */
-    public function removeLock(string $lock, string $key): \stdClass
+    public function removeLock(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/remove/lock/' . $lock . '?key=' . $key;
+        $uri = (string) $this->_baseUri . '/remove/lock/' . $this->_lock . '?key=' . $this->_key;
         if ($key) {}
         return $this->doRequest($uri);
     }
@@ -181,53 +241,55 @@ class Dweetio_Client
     // : Dweets
     /**
      *
-     * @param string $thing
-     * @param array $content
-     * @param string $key
-     * @param bool $quietly
-     *            IF TRUE Create a dweet for a thing. This method differs from /dweet/for/{thing} only in that successful dweets result in an HTTP 204 response rather than the typical verbose response.
      * @return \stdClass
      */
-    public function dweetFor(string $thing, array $content, string $key = '', bool $quietly = false): \stdClass
+    public function dweetFor(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/dweet/for/' . urlencode($thing);
-        if ($quietly === true) {
-            $uri = (string) $this->_baseUri . '/dweet/quietly/for/' . urlencode($thing);
+        $uri = (string) $this->_baseUri . '/dweet/for/' . urlencode($this->_thing);
+        if ($this->_quietly === true) {
+            $uri = (string) $this->_baseUri . '/dweet/quietly/for/' . urlencode($this->_thing);
         }
-        if ($key) {
-            $uri .= '?key=' . $key;
+        if ($this->_key) {
+            $uri .= '?key=' . $this->_key;
         }
         return $this->doRequest($uri, [
-            'json' => $content
+            'json' => $this->_content
         ]);
     }
 
     /**
      *
-     * @param string $thing
-     * @param string $key
      * @return \stdClass
      */
-    public function getLatestDweetFor(string $thing, string $key = ''): \stdClass
+    public function getLatestDweetFor(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/get/latest/dweet/for/' . urlencode($thing);
+        $uri = (string) $this->_baseUri . '/get/latest/dweet/for/' . urlencode($this->_thing);
+        if ($this->_key) {
+            $uri .= '?key=' . $this->_key;
+        }
         return $this->doRequest($uri);
     }
 
     /**
      *
-     * @param string $thing
      * @return \stdClass
      */
-    public function getDweetsFor(string $thing): \stdClass
+    public function getDweetsFor(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/get/dweets/for/' . urlencode($thing);
+        $uri = (string) $this->_baseUri . '/get/dweets/for/' . urlencode($this->_thing);
+        if ($this->_key) {
+            $uri .= '?key=' . $this->_key;
+        }
         return $this->doRequest($uri);
     }
 
-    public function listenForDweetsFrom(string $thing): \stdClass
+    /**
+     *
+     * @return \stdClass
+     */
+    public function listenForDweetsFrom(): \stdClass
     {
-        $uri = (string) $this->_baseUri . '/listen/for/dweets/from/' . $thing;
+        $uri = (string) $this->_baseUri . '/listen/for/dweets/from/' . urlencode($this->_thing);
         return $this->doRequest($uri);
     }
     // : End
@@ -236,7 +298,6 @@ class Dweetio_Client
      * Read all the saved dweets for a thing from long term storage.
      * You can query a maximum of 1 day per request and a granularly of 1 hour.
      *
-     * @param string $thing
      * @param string $key
      * @param string $date
      *            The calendar date (YYYY-MM-DD) from which you'd like to start your query. The response will be a maximum of one day.
@@ -245,17 +306,17 @@ class Dweetio_Client
      *            The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
      * @return \stdClass
      */
-    public function getStoredDweetsFor(string $thing, string $key, string $date, string $hour = ''): \stdClass
+    public function getStoredDweetsFor(string $date, string $hour = ''): \stdClass
     {
         $date = (string) date('Y-m-d', strtotime($date));
-        $uri = (string) $this->_baseUri . '/get/stored/dweets/for/' . $thing . '?key=' . $key . '&date=' . $date;
+        $uri = (string) $this->_baseUri . '/get/stored/dweets/for/' . $this->_thing . '?key=' . $this->_key . '&date=' . $date;
         if ($hour) {
             $uri .= '&hour=' . $hour;
         }
         return $this->doRequest($uri);
     }
 
-    public function getStoredAlertsFor(string $thing): mixed
+    public function getStoredAlertsFor(): mixed
     {}
     // : End
     // : Alerts
