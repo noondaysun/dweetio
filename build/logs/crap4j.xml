@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2017-03-06 15:37:16</timestamp>
+  <timestamp>2017-03-16 10:35:59</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>18</methodCount>
-    <crapMethodCount>1</crapMethodCount>
-    <crapLoad>7</crapLoad>
-    <totalCrap>108</totalCrap>
-    <crapMethodPercent>5.56</crapMethodPercent>
+    <methodCount>24</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>111.68</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>__construct</methodName>
-      <methodSignature>__construct()</methodSignature>
-      <fullMethod>__construct()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodSignature>__construct(array $params = array())</methodSignature>
+      <fullMethod>__construct(array $params = array())</fullMethod>
+      <crap>7.1</crap>
+      <complexity>6</complexity>
+      <coverage>68.75</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -39,6 +39,39 @@
       <methodName>getClient</methodName>
       <methodSignature>getClient(): \GuzzleHttp\Client</methodSignature>
       <fullMethod>getClient(): \GuzzleHttp\Client</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getContent</methodName>
+      <methodSignature>getContent(): array</methodSignature>
+      <fullMethod>getContent(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getQuietly</methodName>
+      <methodSignature>getQuietly(): bool</methodSignature>
+      <fullMethod>getQuietly(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getThing</methodName>
+      <methodSignature>getThing(): string</methodSignature>
+      <fullMethod>getThing(): string</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -69,9 +102,9 @@
     <method>
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
-      <methodName>lock</methodName>
-      <methodSignature>lock(string $thing, string $lock, string $key): \stdClass</methodSignature>
-      <fullMethod>lock(string $thing, string $lock, string $key): \stdClass</fullMethod>
+      <methodName>setContent</methodName>
+      <methodSignature>setContent(array $content)</methodSignature>
+      <fullMethod>setContent(array $content)</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -80,9 +113,42 @@
     <method>
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
+      <methodName>setQuietly</methodName>
+      <methodSignature>setQuietly(bool $quietly)</methodSignature>
+      <fullMethod>setQuietly(bool $quietly)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>setThing</methodName>
+      <methodSignature>setThing(string $thing)</methodSignature>
+      <fullMethod>setThing(string $thing)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(): \stdClass</methodSignature>
+      <fullMethod>lock(): \stdClass</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
       <methodName>unlock</methodName>
-      <methodSignature>unlock(string $thing, string $key): \stdClass</methodSignature>
-      <fullMethod>unlock(string $thing, string $key): \stdClass</fullMethod>
+      <methodSignature>unlock(): \stdClass</methodSignature>
+      <fullMethod>unlock(): \stdClass</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -92,8 +158,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>removeLock</methodName>
-      <methodSignature>removeLock(string $lock, string $key): \stdClass</methodSignature>
-      <fullMethod>removeLock(string $lock, string $key): \stdClass</fullMethod>
+      <methodSignature>removeLock(): \stdClass</methodSignature>
+      <fullMethod>removeLock(): \stdClass</fullMethod>
       <crap>6</crap>
       <complexity>2</complexity>
       <coverage>0</coverage>
@@ -103,8 +169,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>dweetFor</methodName>
-      <methodSignature>dweetFor(string $thing, array $content, string $key = '', bool $quietly = false): \stdClass</methodSignature>
-      <fullMethod>dweetFor(string $thing, array $content, string $key = '', bool $quietly = false): \stdClass</fullMethod>
+      <methodSignature>dweetFor(): \stdClass</methodSignature>
+      <fullMethod>dweetFor(): \stdClass</fullMethod>
       <crap>12</crap>
       <complexity>3</complexity>
       <coverage>0</coverage>
@@ -114,21 +180,21 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getLatestDweetFor</methodName>
-      <methodSignature>getLatestDweetFor(string $thing, string $key = ''): \stdClass</methodSignature>
-      <fullMethod>getLatestDweetFor(string $thing, string $key = ''): \stdClass</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodSignature>getLatestDweetFor(): \stdClass</methodSignature>
+      <fullMethod>getLatestDweetFor(): \stdClass</fullMethod>
+      <crap>2.06</crap>
+      <complexity>2</complexity>
+      <coverage>75</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getDweetsFor</methodName>
-      <methodSignature>getDweetsFor(string $thing): \stdClass</methodSignature>
-      <fullMethod>getDweetsFor(string $thing): \stdClass</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
+      <methodSignature>getDweetsFor(): \stdClass</methodSignature>
+      <fullMethod>getDweetsFor(): \stdClass</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -136,8 +202,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>listenForDweetsFrom</methodName>
-      <methodSignature>listenForDweetsFrom(string $thing): \stdClass</methodSignature>
-      <fullMethod>listenForDweetsFrom(string $thing): \stdClass</fullMethod>
+      <methodSignature>listenForDweetsFrom(): \stdClass</methodSignature>
+      <fullMethod>listenForDweetsFrom(): \stdClass</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -147,8 +213,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getStoredDweetsFor</methodName>
-      <methodSignature>getStoredDweetsFor(string $thing, string $key, string $date, string $hour = ''): \stdClass</methodSignature>
-      <fullMethod>getStoredDweetsFor(string $thing, string $key, string $date, string $hour = ''): \stdClass</fullMethod>
+      <methodSignature>getStoredDweetsFor(string $date, string $hour = ''): \stdClass</methodSignature>
+      <fullMethod>getStoredDweetsFor(string $date, string $hour = ''): \stdClass</fullMethod>
       <crap>6</crap>
       <complexity>2</complexity>
       <coverage>0</coverage>
@@ -158,8 +224,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getStoredAlertsFor</methodName>
-      <methodSignature>getStoredAlertsFor(string $thing): mixed</methodSignature>
-      <fullMethod>getStoredAlertsFor(string $thing): mixed</fullMethod>
+      <methodSignature>getStoredAlertsFor(): mixed</methodSignature>
+      <fullMethod>getStoredAlertsFor(): mixed</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -204,10 +270,10 @@
       <methodName>doRequest</methodName>
       <methodSignature>doRequest(string $url, array $postData = []): \stdClass</methodSignature>
       <fullMethod>doRequest(string $url, array $postData = []): \stdClass</fullMethod>
-      <crap>56</crap>
+      <crap>21.52</crap>
       <complexity>7</complexity>
-      <coverage>0</coverage>
-      <crapLoad>7</crapLoad>
+      <coverage>33.33</coverage>
+      <crapLoad>0</crapLoad>
     </method>
   </methods>
 </crap_result>

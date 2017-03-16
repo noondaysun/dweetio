@@ -1,7 +1,11 @@
 <?php
 namespace Noondaysun\Dweetio\Tests;
 
-include_once '../src/Dweetio.php';
+$base = (string) substr(dirname(realpath(__FILE__)), 0, strpos(dirname(realpath(__FILE__)), 'dweetio'));
+$base .= DIRECTORY_SEPARATOR . 'dweetio' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
+defined('BASE') || define('BASE', $base);
+
+include_once BASE . 'Dweetio.php';
 
 /**
  * Tesing that we can get a successful post/get to and from https://dweet.io using mocked objects
@@ -13,7 +17,7 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
 
     /**
      *
-     * @var Dweetio_Client
+     * @var \Noondaysun\Dweetio\Dweetio_Client
      */
     public $_dweet;
 
@@ -47,7 +51,7 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
      */
     public function setClient()
     {
-        $this->_dweet = $this->getMockBuilder('\Noondaysun\Dweetio\Dweetio_Client');
+        $this->_dweet = new \Noondaysun\Dweetio\Dweetio_Client();
     }
 
     /**
@@ -73,18 +77,20 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
         }
     }
 
-    public function testGettingLatestDweetsForSuccess()
+    public function testGettingLatestDweetsForFailure()
     {
         if (! $this->_dweet) {
             $this->setClient();
         }
-        $client = $this->_dweet->setConstructorArgs(array(
-            'thing' => $this->_thing
-        ))->getMock();
+        $this->_dweet->setThing($this->_thing);
+        $live_response = $this->_dweet->getLatestDweetFor();
         
         $response = new \stdClass();
-        $response->this = 'succeeded';
-        $response->by = 'getting';
-        $response->the = 'dweets';
+        $response->this = 'failed';
+        $response->because = 'jhgfk';
+        
+        $this->assertEquals($response->this, $live_response->this);
+        $this->assertObjectHasAttribute('because', $response);
+        $this->assertObjectHasAttribute('because', $live_response);
     }
 }
