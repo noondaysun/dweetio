@@ -63,11 +63,47 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
         $this->_thing = $thing;
     }
 
-    public function testDweetingFor()
+    public function testDweetingForFailure()
     {
         if (! $this->_dweet) {
             $this->setClient();
         }
+        $this->_dweet->setThing($this->_thing);
+        $success = $this->_dweet->dweetFor();
+
+        $response = new \stdClass();
+        $response->this = 'failed';
+        $response->because = 'jhgfk';
+
+        $this->assertEquals($response->this, $success->this);
+        $this->assertObjectHasAttribute('because', $response);
+        $this->assertObjectHasAttribute('because', $success);
+    }
+
+    public function testDweetingForSuccess()
+    {
+        if (! $this->_dweet) {
+            $this->setClient();
+        }
+        $this->_dweet->setThing($this->_thing);
+        $this->_dweet->setContent([
+            'dfg' => 'arhg'
+        ]);
+        $success = $this->_dweet->dweetFor();
+
+        $response = new \stdClass();
+        $response->this = 'succeeded';
+        $response->by = 'dweeting';
+        $response->the = 'dweet';
+        $response->with = new \stdClass();
+
+        $this->assertEquals($response->this, $success->this);
+        $this->assertObjectHasAttribute('by', $response);
+        $this->assertObjectHasAttribute('by', $success);
+        $this->assertObjectHasAttribute('the', $response);
+        $this->assertObjectHasAttribute('the', $success);
+        $this->assertObjectHasAttribute('with', $response);
+        $this->assertObjectHasAttribute('with', $success);
     }
 
     public function testQuietlyDweetingFor()
@@ -82,13 +118,13 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
         if (! $this->_dweet) {
             $this->setClient();
         }
-        $this->_dweet->setThing($this->_thing);
+        $this->_dweet->setThing($this->_thing . date('U'));
         $live_response = $this->_dweet->getLatestDweetFor();
-        
+
         $response = new \stdClass();
         $response->this = 'failed';
         $response->because = 'jhgfk';
-        
+
         $this->assertEquals($response->this, $live_response->this);
         $this->assertObjectHasAttribute('because', $response);
         $this->assertObjectHasAttribute('because', $live_response);

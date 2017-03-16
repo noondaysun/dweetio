@@ -206,13 +206,12 @@ class Dweetio_Client
      */
     public function lock(): \stdClass
     {
-        if (! $this->_key || ! $this->_lock || ! $this->_thing) {
-            $this->_logger->err('One of thing, lock, or key missing in call to Dweet_Client::lock().');
-            $response = new \stdClass();
-            $response->this = "failed";
-            $response->because = "There were missing parameters.";
-            return $response;
-        }
+        $test = $this->testFunctionRequirementsAreMet([
+            'key',
+            'lock',
+            'thing'
+        ], 'One of thing, lock, or key missing in call to Dweet_Client::lock().');
+        var_dump($test);
         $uri = (string) $this->_baseUri . '/lock/' . $this->_thing . '?lock=' . $$this->_lock . '&key=' . $this->_key;
         return $this->doRequest($uri);
     }
@@ -223,6 +222,13 @@ class Dweetio_Client
      */
     public function unlock(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing',
+            'key'
+        ], 'Dweet_Client::unlock() requires a thing, and a key to work.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
         $uri = (string) $this->_baseUri . '/unlock/' . $this->_thing . '?key=' . $this->_key;
         return $this->doRequest($uri);
     }
@@ -233,8 +239,14 @@ class Dweetio_Client
      */
     public function removeLock(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'lock',
+            'key'
+        ], 'Dweet_Client::removeLock() requires a lock, and a key to work.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
         $uri = (string) $this->_baseUri . '/remove/lock/' . $this->_lock . '?key=' . $this->_key;
-        if ($key) {}
         return $this->doRequest($uri);
     }
     // : End
@@ -245,6 +257,13 @@ class Dweetio_Client
      */
     public function dweetFor(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing',
+            'content'
+        ], 'Dweet_Client::dweetFor() requires a thing to write to, and content.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
         $uri = (string) $this->_baseUri . '/dweet/for/' . urlencode($this->_thing);
         if ($this->_quietly === true) {
             $uri = (string) $this->_baseUri . '/dweet/quietly/for/' . urlencode($this->_thing);
@@ -263,6 +282,13 @@ class Dweetio_Client
      */
     public function getLatestDweetFor(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing'
+        ], 'Dweet_Client::getLatestDweetFor() requires a thing to search for.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
+
         $uri = (string) $this->_baseUri . '/get/latest/dweet/for/' . urlencode($this->_thing);
         if ($this->_key) {
             $uri .= '?key=' . $this->_key;
@@ -276,6 +302,12 @@ class Dweetio_Client
      */
     public function getDweetsFor(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing'
+        ], 'Dweet_Client::getDweetFor() requires a thing to search for.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
         $uri = (string) $this->_baseUri . '/get/dweets/for/' . urlencode($this->_thing);
         if ($this->_key) {
             $uri .= '?key=' . $this->_key;
@@ -289,6 +321,12 @@ class Dweetio_Client
      */
     public function listenForDweetsFrom(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing'
+        ], 'Dweet_Client::listenForDweetsFrom() requires a thing to search for.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
         $uri = (string) $this->_baseUri . '/listen/for/dweets/from/' . urlencode($this->_thing);
         return $this->doRequest($uri);
     }
@@ -378,6 +416,42 @@ class Dweetio_Client
             $response->because = $e->getMessage();
             return $response;
         }
+    }
+
+    /**
+     *
+     * @param array $required
+     * @param string $message
+     * @return \stdClass
+     */
+    private function testFunctionRequirementsAreMet(array $required, string $message): \stdClass
+    {
+        $return_value = (bool) false;
+        $flipped = array_flip($required);
+        if (array_key_exists('thing', $flipped) && ! $this->_thing) {
+            $return_value = true;
+        }
+        if (array_key_exists('lock', $flipped) && ! $this->_lock) {
+            $return_value = true;
+        }
+        if (array_key_exists('key', $flipped) && ! $this->_key) {
+            $return_value = true;
+        }
+        if (array_key_exists('content', $flipped) && ! $this->_content) {
+            $return_value = true;
+        }
+        if (array_key_exists('quietly', $flipped) && ! $this->_quietly) {
+            $return_value = true;
+        }
+
+        if ($return_value === true) {
+            $this->_logger->err($message);
+            $response = new \stdClass();
+            $response->this = "failed";
+            $response->because = "There were missing parameters.";
+            return $response;
+        }
+        return new \stdClass();
     }
     // : End
 }

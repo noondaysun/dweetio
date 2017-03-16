@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2017-03-16 10:35:59</timestamp>
+  <timestamp>2017-03-16 19:35:50</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>24</methodCount>
+    <methodCount>25</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>111.68</totalCrap>
+    <totalCrap>117.28</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -138,8 +138,8 @@
       <methodName>lock</methodName>
       <methodSignature>lock(): \stdClass</methodSignature>
       <fullMethod>lock(): \stdClass</fullMethod>
-      <crap>20</crap>
-      <complexity>4</complexity>
+      <crap>2</crap>
+      <complexity>1</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -149,8 +149,8 @@
       <methodName>unlock</methodName>
       <methodSignature>unlock(): \stdClass</methodSignature>
       <fullMethod>unlock(): \stdClass</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
+      <crap>6</crap>
+      <complexity>2</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -171,9 +171,9 @@
       <methodName>dweetFor</methodName>
       <methodSignature>dweetFor(): \stdClass</methodSignature>
       <fullMethod>dweetFor(): \stdClass</fullMethod>
-      <crap>12</crap>
-      <complexity>3</complexity>
-      <coverage>0</coverage>
+      <crap>7.18</crap>
+      <complexity>4</complexity>
+      <coverage>41.67</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -182,8 +182,8 @@
       <methodName>getLatestDweetFor</methodName>
       <methodSignature>getLatestDweetFor(): \stdClass</methodSignature>
       <fullMethod>getLatestDweetFor(): \stdClass</fullMethod>
-      <crap>2.06</crap>
-      <complexity>2</complexity>
+      <crap>3.14</crap>
+      <complexity>3</complexity>
       <coverage>75</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -193,8 +193,8 @@
       <methodName>getDweetsFor</methodName>
       <methodSignature>getDweetsFor(): \stdClass</methodSignature>
       <fullMethod>getDweetsFor(): \stdClass</fullMethod>
-      <crap>6</crap>
-      <complexity>2</complexity>
+      <crap>12</crap>
+      <complexity>3</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -204,8 +204,8 @@
       <methodName>listenForDweetsFrom</methodName>
       <methodSignature>listenForDweetsFrom(): \stdClass</methodSignature>
       <fullMethod>listenForDweetsFrom(): \stdClass</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
+      <crap>6</crap>
+      <complexity>2</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -273,6 +273,17 @@
       <crap>21.52</crap>
       <complexity>7</complexity>
       <coverage>33.33</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>testFunctionRequirementsAreMet</methodName>
+      <methodSignature>testFunctionRequirementsAreMet(array $required, string $message): \stdClass</methodSignature>
+      <fullMethod>testFunctionRequirementsAreMet(array $required, string $message): \stdClass</fullMethod>
+      <crap>13.34</crap>
+      <complexity>12</complexity>
+      <coverage>78.95</coverage>
       <crapLoad>0</crapLoad>
     </method>
   </methods>

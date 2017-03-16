@@ -49,53 +49,70 @@
  <error line="195" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
  <error line="196" column="6" severity="error" message="Missing @return tag in function comment" source="PEAR.Commenting.FunctionComment.MissingReturn"/>
  <error line="203" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="210" column="103" severity="warning" message="Line exceeds 85 characters; contains 103 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="216" column="118" severity="warning" message="Line exceeds 85 characters; contains 118 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="220" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="226" column="93" severity="warning" message="Line exceeds 85 characters; contains 93 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="230" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="236" column="97" severity="warning" message="Line exceeds 85 characters; contains 97 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="237" column="9" severity="error" message="Expected &quot;if (...) {\n&quot;; found &quot;if (...) {&quot;" source="PEAR.ControlStructures.ControlSignature"/>
- <error line="237" column="20" severity="error" message="Closing brace must be on a line by itself" source="PEAR.WhiteSpace.ScopeClosingBrace.Line"/>
- <error line="242" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="250" column="95" severity="warning" message="Line exceeds 85 characters; contains 95 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="255" column="23" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
- <error line="257" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
- <error line="260" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="266" column="94" severity="warning" message="Line exceeds 85 characters; contains 94 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="273" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="279" column="88" severity="warning" message="Line exceeds 85 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="286" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
- <error line="292" column="96" severity="warning" message="Line exceeds 85 characters; contains 96 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="301" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
- <error line="301" column="8" severity="error" message="Doc comment for parameter $key does not match actual variable name $date" source="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/>
- <error line="301" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
- <error line="302" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
- <error line="302" column="8" severity="error" message="Doc comment for parameter $date does not match actual variable name $hour" source="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/>
- <error line="302" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
- <error line="303" column="19" severity="warning" message="Line exceeds 85 characters; contains 134 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="304" column="19" severity="warning" message="Line exceeds 85 characters; contains 101 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="305" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
- <error line="305" column="8" severity="error" message="Superfluous parameter comment" source="PEAR.Commenting.FunctionComment.ExtraParamComment"/>
- <error line="305" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
- <error line="306" column="19" severity="warning" message="Line exceeds 85 characters; contains 189 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="307" column="8" severity="error" message="Tag cannot be grouped with parameter tags in a doc comment" source="Generic.Commenting.DocComment.NonParamGroup"/>
- <error line="312" column="127" severity="warning" message="Line exceeds 85 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="319" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
- <error line="320" column="6" severity="error" message="Closing brace must be on a line by itself" source="PEAR.WhiteSpace.ScopeClosingBrace.Line"/>
- <error line="323" column="12" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
- <error line="323" column="92" severity="warning" message="Line exceeds 85 characters; contains 96 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="328" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
- <error line="333" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="209" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="213" column="81" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="215" column="118" severity="warning" message="Line exceeds 85 characters; contains 118 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="219" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="225" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="228" column="73" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="232" column="93" severity="warning" message="Line exceeds 85 characters; contains 93 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="236" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="242" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="245" column="76" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="249" column="97" severity="warning" message="Line exceeds 85 characters; contains 97 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="254" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="260" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="263" column="81" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="269" column="95" severity="warning" message="Line exceeds 85 characters; contains 95 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="274" column="23" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="276" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="279" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="285" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="287" column="79" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="292" column="94" severity="warning" message="Line exceeds 85 characters; contains 94 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="299" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="305" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="307" column="73" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="311" column="88" severity="warning" message="Line exceeds 85 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="318" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="324" column="24" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="326" column="81" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="330" column="96" severity="warning" message="Line exceeds 85 characters; contains 96 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="339" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="339" column="8" severity="error" message="Doc comment for parameter $key does not match actual variable name $date" source="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/>
+ <error line="339" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
+ <error line="340" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="340" column="8" severity="error" message="Doc comment for parameter $date does not match actual variable name $hour" source="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/>
+ <error line="340" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
+ <error line="341" column="19" severity="warning" message="Line exceeds 85 characters; contains 134 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="342" column="19" severity="warning" message="Line exceeds 85 characters; contains 101 characters" source="Generic.Files.LineLength.TooLong"/>
  <error line="343" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="343" column="8" severity="error" message="Superfluous parameter comment" source="PEAR.Commenting.FunctionComment.ExtraParamComment"/>
  <error line="343" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
- <error line="344" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
- <error line="344" column="8" severity="error" message="Expected 2 spaces after parameter type; 1 found" source="PEAR.Commenting.FunctionComment.SpacingAfterParamType"/>
- <error line="344" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
+ <error line="344" column="19" severity="warning" message="Line exceeds 85 characters; contains 189 characters" source="Generic.Files.LineLength.TooLong"/>
  <error line="345" column="8" severity="error" message="Tag cannot be grouped with parameter tags in a doc comment" source="Generic.Commenting.DocComment.NonParamGroup"/>
- <error line="347" column="13" severity="error" message="Private method name &quot;Dweetio_Client::doRequest&quot; must be prefixed with an underscore" source="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
- <error line="368" column="125" severity="warning" message="Line exceeds 85 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="371" column="125" severity="warning" message="Line exceeds 85 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="350" column="127" severity="warning" message="Line exceeds 85 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="357" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="358" column="6" severity="error" message="Closing brace must be on a line by itself" source="PEAR.WhiteSpace.ScopeClosingBrace.Line"/>
+ <error line="361" column="12" severity="error" message="You must use &quot;/**&quot; style comments for a function comment" source="PEAR.Commenting.FunctionComment.WrongStyle"/>
+ <error line="361" column="92" severity="warning" message="Line exceeds 85 characters; contains 96 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="366" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="371" column="12" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment.Missing"/>
+ <error line="381" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="381" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
+ <error line="382" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="382" column="8" severity="error" message="Expected 2 spaces after parameter type; 1 found" source="PEAR.Commenting.FunctionComment.SpacingAfterParamType"/>
+ <error line="382" column="14" severity="error" message="Tag value indented incorrectly; expected 2 spaces but found 1" source="Generic.Commenting.DocComment.TagValueIndent"/>
+ <error line="383" column="8" severity="error" message="Tag cannot be grouped with parameter tags in a doc comment" source="Generic.Commenting.DocComment.NonParamGroup"/>
+ <error line="385" column="13" severity="error" message="Private method name &quot;Dweetio_Client::doRequest&quot; must be prefixed with an underscore" source="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+ <error line="406" column="125" severity="warning" message="Line exceeds 85 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="409" column="125" severity="warning" message="Line exceeds 85 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="421" column="5" severity="error" message="Missing short description in doc comment" source="Generic.Commenting.DocComment.MissingShort"/>
+ <error line="423" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="423" column="8" severity="error" message="Expected 2 spaces after parameter type; 1 found" source="PEAR.Commenting.FunctionComment.SpacingAfterParamType"/>
+ <error line="424" column="8" severity="error" message="Missing parameter comment" source="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+ <error line="427" column="13" severity="error" message="Private method name &quot;Dweetio_Client::testFunctionRequirementsAreMet&quot; must be prefixed with an underscore" source="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+ <error line="427" column="89" severity="warning" message="Line exceeds 85 characters; contains 96 characters" source="Generic.Files.LineLength.TooLong"/>
 </file>
 </checkstyle>
 
