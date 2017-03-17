@@ -211,7 +211,8 @@ class Dweetio_Client
             'key',
             'lock',
             'thing'
-            ], 'One of thing, lock, or key missing in call to Dweet_Client::lock().'
+            ],
+            'One of thing, lock, or key missing in call to Dweet_Client::lock().'
         );
         var_dump($test);
         $uri = (string) $this->_baseUri . '/lock/' . $this->_thing . '?lock=' . $$this->_lock . '&key=' . $this->_key;
@@ -228,7 +229,8 @@ class Dweetio_Client
             [
             'thing',
             'key'
-            ], 'Dweet_Client::unlock() requires a thing, and a key to work.'
+            ],
+            'Dweet_Client::unlock() requires a thing, and a key to work.'
         );
         if (get_object_vars($test)) {
             return $test;
@@ -247,7 +249,8 @@ class Dweetio_Client
             [
             'lock',
             'key'
-            ], 'Dweet_Client::removeLock() requires a lock, and a key to work.'
+            ],
+            'Dweet_Client::removeLock() requires a lock, and a key to work.'
         );
         if (get_object_vars($test)) {
             return $test;
@@ -267,7 +270,8 @@ class Dweetio_Client
             [
             'thing',
             'content'
-            ], 'Dweet_Client::dweetFor() requires a thing to write to, and content.'
+            ],
+            'Dweet_Client::dweetFor() requires a thing to write to, and content.'
         );
         if (get_object_vars($test)) {
             return $test;
@@ -280,7 +284,8 @@ class Dweetio_Client
             $uri .= '?key=' . $this->_key;
         }
         return $this->doRequest(
-            $uri, [
+            $uri,
+            [
             'json' => $this->_content
             ]
         );
@@ -295,7 +300,8 @@ class Dweetio_Client
         $test = $this->testFunctionRequirementsAreMet(
             [
             'thing'
-            ], 'Dweet_Client::getLatestDweetFor() requires a thing to search for.'
+            ],
+            'Dweet_Client::getLatestDweetFor() requires a thing to search for.'
         );
         if (get_object_vars($test)) {
             return $test;
@@ -317,7 +323,8 @@ class Dweetio_Client
         $test = $this->testFunctionRequirementsAreMet(
             [
             'thing'
-            ], 'Dweet_Client::getDweetFor() requires a thing to search for.'
+            ],
+            'Dweet_Client::getDweetFor() requires a thing to search for.'
         );
         if (get_object_vars($test)) {
             return $test;
@@ -338,7 +345,8 @@ class Dweetio_Client
         $test = $this->testFunctionRequirementsAreMet(
             [
             'thing'
-            ], 'Dweet_Client::listenForDweetsFrom() requires a thing to search for.'
+            ],
+            'Dweet_Client::listenForDweetsFrom() requires a thing to search for.'
         );
         if (get_object_vars($test)) {
             return $test;
