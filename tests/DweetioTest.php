@@ -5,7 +5,7 @@ $base = (string) substr(dirname(realpath(__FILE__)), 0, strpos(dirname(realpath(
 $base .= DIRECTORY_SEPARATOR . 'dweetio' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
 defined('BASE') || define('BASE', $base);
 
-include_once BASE . 'Dweetio.php';
+require_once BASE . 'Dweetio.php';
 
 /**
  * Tesing that we can get a successful post/get to and from https://dweet.io using mocked objects
@@ -86,9 +86,11 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
             $this->setClient();
         }
         $this->_dweet->setThing($this->_thing);
-        $this->_dweet->setContent([
+        $this->_dweet->setContent(
+            [
             'dfg' => 'arhg'
-        ]);
+            ]
+        );
         $success = $this->_dweet->dweetFor();
 
         $response = new \stdClass();

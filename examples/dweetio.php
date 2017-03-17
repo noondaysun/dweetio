@@ -6,7 +6,7 @@ namespace Noondaysun\Dweetio;
  */
 
 // : Includes
-include_once dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'Dweetio.php';
+require_once dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'Dweetio.php';
 // : End
 $dweet = new \Noondaysun\Dweetio\Dweetio_Client();
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2017-03-16 19:35:50</timestamp>
+  <timestamp>2017-03-17 14:56:02</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>25</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>117.28</totalCrap>
+    <totalCrap>108.85</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -105,9 +105,9 @@
       <methodName>setContent</methodName>
       <methodSignature>setContent(array $content)</methodSignature>
       <fullMethod>setContent(array $content)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -171,9 +171,9 @@
       <methodName>dweetFor</methodName>
       <methodSignature>dweetFor(): \stdClass</methodSignature>
       <fullMethod>dweetFor(): \stdClass</fullMethod>
-      <crap>7.18</crap>
+      <crap>4.07</crap>
       <complexity>4</complexity>
-      <coverage>41.67</coverage>
+      <coverage>83.33</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -270,9 +270,9 @@
       <methodName>doRequest</methodName>
       <methodSignature>doRequest(string $url, array $postData = []): \stdClass</methodSignature>
       <fullMethod>doRequest(string $url, array $postData = []): \stdClass</fullMethod>
-      <crap>21.52</crap>
+      <crap>17.2</crap>
       <complexity>7</complexity>
-      <coverage>33.33</coverage>
+      <coverage>40.74</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>

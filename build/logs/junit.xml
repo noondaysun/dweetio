@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="dweetio" tests="4" assertions="3" failures="0" errors="0" time="2.836388">
-    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="4" assertions="3" failures="0" errors="0" time="2.836388">
-      <testcase name="testDweetingForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="66" assertions="0" time="0.027263">
-        <system-out>/home/feighen/workspace/dweetio/tests/DweetioTest.php:73:
-class stdClass#33 (2) {
-  public $this =&gt;
-  string(6) "failed"
-  public $because =&gt;
-  string(30) "There were missing parameters."
-}
-</system-out>
-      </testcase>
-      <testcase name="testDweetingForSuccess" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="76" assertions="0" time="0.005166"/>
-      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="83" assertions="0" time="0.005181"/>
-      <testcase name="testGettingLatestDweetsForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="90" assertions="3" time="2.798778"/>
+  <testsuite name="dweetio" tests="4" assertions="13" failures="0" errors="0" time="2.663439">
+    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="4" assertions="13" failures="0" errors="0" time="2.663439">
+      <testcase name="testDweetingForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="66" assertions="3" time="0.015878"/>
+      <testcase name="testDweetingForSuccess" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="83" assertions="7" time="1.576480"/>
+      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="111" assertions="0" time="0.004453"/>
+      <testcase name="testGettingLatestDweetsForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="118" assertions="3" time="1.066628"/>
     </testsuite>
   </testsuite>
 </testsuites>
