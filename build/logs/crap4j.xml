@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2017-03-17 14:56:02</timestamp>
+  <timestamp>2017-03-30 09:14:39</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>25</methodCount>
+    <methodCount>29</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>108.85</totalCrap>
+    <totalCrap>132.85</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -80,6 +80,28 @@
     <method>
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
+      <methodName>getDate</methodName>
+      <methodSignature>getDate(): string</methodSignature>
+      <fullMethod>getDate(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>getHour</methodName>
+      <methodSignature>getHour(): string</methodSignature>
+      <fullMethod>getHour(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
       <methodName>setBaseUri</methodName>
       <methodSignature>setBaseUri(string $uri)</methodSignature>
       <fullMethod>setBaseUri(string $uri)</fullMethod>
@@ -108,6 +130,28 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>setDate</methodName>
+      <methodSignature>setDate(string $date)</methodSignature>
+      <fullMethod>setDate(string $date)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Dweetio</package>
+      <className>Dweetio_Client</className>
+      <methodName>setHour</methodName>
+      <methodSignature>setHour(string $hour)</methodSignature>
+      <fullMethod>setHour(string $hour)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -213,10 +257,10 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getStoredDweetsFor</methodName>
-      <methodSignature>getStoredDweetsFor(string $date, string $hour = ''): \stdClass</methodSignature>
-      <fullMethod>getStoredDweetsFor(string $date, string $hour = ''): \stdClass</fullMethod>
-      <crap>6</crap>
-      <complexity>2</complexity>
+      <methodSignature>getStoredDweetsFor(): \stdClass</methodSignature>
+      <fullMethod>getStoredDweetsFor(): \stdClass</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -224,10 +268,10 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getStoredAlertsFor</methodName>
-      <methodSignature>getStoredAlertsFor(): mixed</methodSignature>
-      <fullMethod>getStoredAlertsFor(): mixed</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
+      <methodSignature>getStoredAlertsFor(): \stdClass</methodSignature>
+      <fullMethod>getStoredAlertsFor(): \stdClass</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -235,8 +279,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>alert</methodName>
-      <methodSignature>alert(string $who, string $when, string $condition, string $key = ""): mixed</methodSignature>
-      <fullMethod>alert(string $who, string $when, string $condition, string $key = ""): mixed</fullMethod>
+      <methodSignature>alert(string $who, string $when, string $condition, string $key = ""): \stdClass</methodSignature>
+      <fullMethod>alert(string $who, string $when, string $condition, string $key = ""): \stdClass</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -246,8 +290,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>getAlertFor</methodName>
-      <methodSignature>getAlertFor(string $thing): mixed</methodSignature>
-      <fullMethod>getAlertFor(string $thing): mixed</fullMethod>
+      <methodSignature>getAlertFor(): \stdClass</methodSignature>
+      <fullMethod>getAlertFor(): \stdClass</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>
@@ -257,8 +301,8 @@
       <package>Noondaysun\Dweetio</package>
       <className>Dweetio_Client</className>
       <methodName>removeAlertFor</methodName>
-      <methodSignature>removeAlertFor(string $thing): mixed</methodSignature>
-      <fullMethod>removeAlertFor(string $thing): mixed</fullMethod>
+      <methodSignature>removeAlertFor(): \stdClass</methodSignature>
+      <fullMethod>removeAlertFor(): \stdClass</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>

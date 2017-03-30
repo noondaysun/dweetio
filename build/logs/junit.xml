@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="dweetio" tests="4" assertions="13" failures="0" errors="0" time="2.663439">
-    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="4" assertions="13" failures="0" errors="0" time="2.663439">
-      <testcase name="testDweetingForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="66" assertions="3" time="0.015878"/>
-      <testcase name="testDweetingForSuccess" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="83" assertions="7" time="1.576480"/>
-      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="111" assertions="0" time="0.004453"/>
-      <testcase name="testGettingLatestDweetsForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="118" assertions="3" time="1.066628"/>
+  <testsuite name="dweetio" tests="4" assertions="13" failures="0" errors="0" time="2.857361">
+    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="4" assertions="13" failures="0" errors="0" time="2.857361">
+      <testcase name="testDweetingForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="67" assertions="3" time="0.098188"/>
+      <testcase name="testDweetingForSuccess" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="84" assertions="7" time="1.704584"/>
+      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="110" assertions="0" time="0.002048"/>
+      <testcase name="testGettingLatestDweetsForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="117" assertions="3" time="1.052541"/>
     </testsuite>
   </testsuite>
 </testsuites>

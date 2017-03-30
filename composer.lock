@@ -153,16 +153,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "0d6c7ca039329247e4f0f8f8f6506810e8248855"
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/0d6c7ca039329247e4f0f8f8f6506810e8248855",
-                "reference": "0d6c7ca039329247e4f0f8f8f6506810e8248855",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +214,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-02-27 10:51:17"
+            "time": "2017-03-20 17:10:46"
         },
         {
             "name": "pds/skeleton",
@@ -931,16 +931,16 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
+                "reference": "1bf24f7334fe16c88bf9d467863309ceaf285b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
-                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/1bf24f7334fe16c88bf9d467863309ceaf285b01",
+                "reference": "1bf24f7334fe16c88bf9d467863309ceaf285b01",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +969,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2016-11-02 15:56:58"
+            "time": "2017-03-29 16:04:15"
         },
         {
             "name": "herrera-io/json",
@@ -1178,16 +1178,16 @@
         },
         {
             "name": "jms/serializer",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/serializer.git",
-                "reference": "9dc44f2924a90bf526a2e1c4bb1ce9d772a00a45"
+                "reference": "5e9008cbb0bac2986979d905a87ae48efcf578c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/9dc44f2924a90bf526a2e1c4bb1ce9d772a00a45",
-                "reference": "9dc44f2924a90bf526a2e1c4bb1ce9d772a00a45",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/5e9008cbb0bac2986979d905a87ae48efcf578c4",
+                "reference": "5e9008cbb0bac2986979d905a87ae48efcf578c4",
                 "shasum": ""
             },
             "require": {
@@ -1200,6 +1200,7 @@
                 "phpoption/phpoption": "^1.1"
             },
             "conflict": {
+                "jms/serializer-bundle": "<1.2.1",
                 "twig/twig": "<1.12"
             },
             "require-dev": {
@@ -1218,12 +1219,14 @@
                 "twig/twig": "~1.12|~2.0"
             },
             "suggest": {
+                "doctrine/cache": "Required if you like to use cache functionality.",
+                "doctrine/collections": "Required if you like to use doctrine collection types as ArrayCollection.",
                 "symfony/yaml": "Required if you'd like to serialize data to YAML format."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -1250,7 +1253,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2017-02-14 14:35:22"
+            "time": "2017-03-24 13:11:23"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -4168,16 +4171,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f"
+                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9935b662e24d6e634da88901ab534cc12e8c728f",
-                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
+                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
                 "shasum": ""
             },
             "require": {
@@ -4186,12 +4189,12 @@
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.2"
+                "symfony/phpunit-bridge": "~3.3@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.32-dev"
+                    "dev-master": "1.33-dev"
                 }
             },
             "autoload": {
@@ -4226,7 +4229,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-02-27 00:07:03"
+            "time": "2017-03-22 15:40:09"
         },
         {
             "name": "zendframework/zend-cache",

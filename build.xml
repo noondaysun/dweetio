@@ -84,7 +84,15 @@
 	<target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
 		<exec logoutput="true" command="${basedir}/vendor/bin/phpcb --log ${basedir}/build/logs --source ${source} --output ${basedir}/build/code-browser" />
 	</target>
+	
+	<target name="lint-src" description="Do a lint check on all php files">
+		<exec logoutput="true" command="php -l ${basedir}/src/*.php" />
+	</target>
+	
+	<target name="lint-tests" description="Do a lint check on all php files">
+		<exec logoutput="true" command="php -l ${basedir}/tests/*.php" />
+	</target>
 
-	<target name="build" depends="clean,composer,try_ParallelTasks,phpunit,phpcb" />
+	<target name="build" depends="clean,composer,lint-src,lint-tests,try_ParallelTasks,phpunit,phpcb" />
 
 </project>

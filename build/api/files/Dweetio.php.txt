@@ -65,6 +65,19 @@ class Dweetio_Client
      * @var bool
      */
     protected $_quietly;
+
+    /**
+     *
+     * @var string The calendar date (YYYY-MM-DD) from which you'd like to start your query. The response will be a maximum of one day.
+     *      must be formatted YYYY-mm-dd which is why I've manually converted it to that format
+     */
+    protected $_date;
+
+    /**
+     *
+     * @var string The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
+     */
+    protected $_hour;
     // : End
     // : Public functions
     // : Magic
@@ -155,6 +168,24 @@ class Dweetio_Client
 
     /**
      *
+     * @return string
+     */
+    public function getDate(): string
+    {
+        return $this->_date;
+    }
+
+    /**
+     *
+     * @return string
+     */
+    public function getHour(): string
+    {
+        return $this->_hour;
+    }
+
+    /**
+     *
      * @param string $uri
      */
     public function setBaseUri(string $uri)
@@ -178,6 +209,24 @@ class Dweetio_Client
     public function setContent(array $content)
     {
         $this->_content = $content;
+    }
+
+    /**
+     *
+     * @param string $date
+     */
+    public function setDate(string $date)
+    {
+        $this->_date = $date;
+    }
+
+    /**
+     *
+     * @param string $hour
+     */
+    public function setHour(string $hour)
+    {
+        $this->_hour = $hour;
     }
 
     /**
@@ -206,13 +255,11 @@ class Dweetio_Client
      */
     public function lock(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'key',
             'lock',
             'thing'
-            ], 'One of thing, lock, or key missing in call to Dweet_Client::lock().'
-        );
+        ], 'One of thing, lock, or key missing in call to Dweet_Client::lock().');
         var_dump($test);
         $uri = (string) $this->_baseUri . '/lock/' . $this->_thing . '?lock=' . $$this->_lock . '&key=' . $this->_key;
         return $this->doRequest($uri);
@@ -224,12 +271,10 @@ class Dweetio_Client
      */
     public function unlock(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'thing',
             'key'
-            ], 'Dweet_Client::unlock() requires a thing, and a key to work.'
-        );
+        ], 'Dweet_Client::unlock() requires a thing, and a key to work.');
         if (get_object_vars($test)) {
             return $test;
         }
@@ -243,12 +288,10 @@ class Dweetio_Client
      */
     public function removeLock(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'lock',
             'key'
-            ], 'Dweet_Client::removeLock() requires a lock, and a key to work.'
-        );
+        ], 'Dweet_Client::removeLock() requires a lock, and a key to work.');
         if (get_object_vars($test)) {
             return $test;
         }
@@ -263,12 +306,10 @@ class Dweetio_Client
      */
     public function dweetFor(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'thing',
             'content'
-            ], 'Dweet_Client::dweetFor() requires a thing to write to, and content.'
-        );
+        ], 'Dweet_Client::dweetFor() requires a thing to write to, and content.');
         if (get_object_vars($test)) {
             return $test;
         }
@@ -279,11 +320,9 @@ class Dweetio_Client
         if ($this->_key) {
             $uri .= '?key=' . $this->_key;
         }
-        return $this->doRequest(
-            $uri, [
+        return $this->doRequest($uri, [
             'json' => $this->_content
-            ]
-        );
+        ]);
     }
 
     /**
@@ -292,15 +331,13 @@ class Dweetio_Client
      */
     public function getLatestDweetFor(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'thing'
-            ], 'Dweet_Client::getLatestDweetFor() requires a thing to search for.'
-        );
+        ], 'Dweet_Client::getLatestDweetFor() requires a thing to search for.');
         if (get_object_vars($test)) {
             return $test;
         }
-
+        
         $uri = (string) $this->_baseUri . '/get/latest/dweet/for/' . urlencode($this->_thing);
         if ($this->_key) {
             $uri .= '?key=' . $this->_key;
@@ -314,11 +351,9 @@ class Dweetio_Client
      */
     public function getDweetsFor(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'thing'
-            ], 'Dweet_Client::getDweetFor() requires a thing to search for.'
-        );
+        ], 'Dweet_Client::getDweetFor() requires a thing to search for.');
         if (get_object_vars($test)) {
             return $test;
         }
@@ -335,11 +370,9 @@ class Dweetio_Client
      */
     public function listenForDweetsFrom(): \stdClass
     {
-        $test = $this->testFunctionRequirementsAreMet(
-            [
+        $test = $this->testFunctionRequirementsAreMet([
             'thing'
-            ], 'Dweet_Client::listenForDweetsFrom() requires a thing to search for.'
-        );
+        ], 'Dweet_Client::listenForDweetsFrom() requires a thing to search for.');
         if (get_object_vars($test)) {
             return $test;
         }
@@ -352,40 +385,60 @@ class Dweetio_Client
      * Read all the saved dweets for a thing from long term storage.
      * You can query a maximum of 1 day per request and a granularly of 1 hour.
      *
-     * @param  string $key
-     * @param  string $date
-     *            The calendar date (YYYY-MM-DD) from which you'd like to start your query. The response will be a maximum of one day.
-     *            must be formatted YYYY-mm-dd which is why I've manually converted it to that format
-     * @param  string $hour
-     *            The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
      * @return \stdClass
      */
-    public function getStoredDweetsFor(string $date, string $hour = ''): \stdClass
+    public function getStoredDweetsFor(): \stdClass
     {
-        $date = (string) date('Y-m-d', strtotime($date));
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing',
+            'key',
+            'date'
+        ], 'Dweet_Client::getStoredDweetsFor() requires a thing to search for, and a date to search on.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
+        $date = (string) date('Y-m-d', strtotime($this->_date));
         $uri = (string) $this->_baseUri . '/get/stored/dweets/for/' . $this->_thing . '?key=' . $this->_key . '&date=' . $date;
-        if ($hour) {
-            $uri .= '&hour=' . $hour;
+        if ($this->_hour) {
+            $uri .= '&hour=' . $this->_hour;
         }
         return $this->doRequest($uri);
     }
 
-    public function getStoredAlertsFor(): mixed
+    /**
+     *
+     * @return \stdClass
+     */
+    public function getStoredAlertsFor(): \stdClass
     {
+        $test = $this->testFunctionRequirementsAreMet([
+            'thing',
+            'key',
+            'date'
+        ], 'Dweet_Client::getStoredAlertsFor() requires a thing to search for, and a date to search on.');
+        if (get_object_vars($test)) {
+            return $test;
+        }
+        $date = (string) date('Y-m-d', strtotime($this->_date));
+        $uri = (string) $this->_baseUri . '/get/stored/alerts/for/' . $this->_thing . '?key=' . $this->_key . '&date=' . $date;
+        if ($this->_hour) {
+            $uri .= '&hour=' . $this->_hour;
+        }
+        return $this->doRequest($uri);
     }
     // : End
     // : Alerts
-    public function alert(string $who, string $when, string $condition, string $key = ""): mixed
+    public function alert(string $who, string $when, string $condition, string $key = ""): \stdClass
     {
         $uri = (string) $this->_baseUri . '';
     }
 
-    public function getAlertFor(string $thing): mixed
+    public function getAlertFor(): \stdClass
     {
         $uri = (string) $this->_baseUri . '';
     }
 
-    public function removeAlertFor(string $thing): mixed
+    public function removeAlertFor(): \stdClass
     {
         $uri = (string) $this->_baseUri . '';
     }
@@ -395,8 +448,8 @@ class Dweetio_Client
     /**
      * Actually do the work - Calls GuzzleHTTPClient->request to do the heavy lifting
      *
-     * @param  string $url
-     * @param  array  $postData
+     * @param string $url
+     * @param array $postData
      * @return \stdClass
      */
     private function doRequest(string $url, array $postData = []): \stdClass
@@ -437,7 +490,7 @@ class Dweetio_Client
 
     /**
      *
-     * @param array  $required
+     * @param array $required
      * @param string $message
      * @return \stdClass
      */
@@ -460,7 +513,7 @@ class Dweetio_Client
         if (array_key_exists('quietly', $flipped) && ! $this->_quietly) {
             $return_value = true;
         }
-
+        
         if ($return_value === true) {
             $this->_logger->err($message);
             $response = new \stdClass();

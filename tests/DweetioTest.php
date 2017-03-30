@@ -1,14 +1,15 @@
 <?php
 namespace Noondaysun\Dweetio\Tests;
 
-$base = (string) substr(dirname(realpath(__FILE__)), 0, strpos(dirname(realpath(__FILE__)), 'dweetio'));
-$base .= DIRECTORY_SEPARATOR . 'dweetio' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
+$base = (string) dirname(realpath(__FILE__));
+$base .= DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
+print $base;
 defined('BASE') || define('BASE', $base);
 
 require_once BASE . 'Dweetio.php';
 
 /**
- * Tesing that we can get a successful post/get to and from https://dweet.io using mocked objects
+ * Tesing that we can get a successful post/get to and from https://dweet.io
  *
  * @package Tests
  */
@@ -70,11 +71,11 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
         }
         $this->_dweet->setThing($this->_thing);
         $success = $this->_dweet->dweetFor();
-
+        
         $response = new \stdClass();
         $response->this = 'failed';
         $response->because = 'jhgfk';
-
+        
         $this->assertEquals($response->this, $success->this);
         $this->assertObjectHasAttribute('because', $response);
         $this->assertObjectHasAttribute('because', $success);
@@ -86,19 +87,17 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
             $this->setClient();
         }
         $this->_dweet->setThing($this->_thing);
-        $this->_dweet->setContent(
-            [
+        $this->_dweet->setContent([
             'dfg' => 'arhg'
-            ]
-        );
+        ]);
         $success = $this->_dweet->dweetFor();
-
+        
         $response = new \stdClass();
         $response->this = 'succeeded';
         $response->by = 'dweeting';
         $response->the = 'dweet';
         $response->with = new \stdClass();
-
+        
         $this->assertEquals($response->this, $success->this);
         $this->assertObjectHasAttribute('by', $response);
         $this->assertObjectHasAttribute('by', $success);
@@ -122,11 +121,11 @@ class DweetioTest extends \PHPUnit_Framework_TestCase
         }
         $this->_dweet->setThing($this->_thing . date('U'));
         $live_response = $this->_dweet->getLatestDweetFor();
-
+        
         $response = new \stdClass();
         $response->this = 'failed';
         $response->because = 'jhgfk';
-
+        
         $this->assertEquals($response->this, $live_response->this);
         $this->assertObjectHasAttribute('because', $response);
         $this->assertObjectHasAttribute('because', $live_response);
