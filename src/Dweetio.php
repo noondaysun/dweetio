@@ -6,7 +6,47 @@ namespace Noondaysun\Dweetio;
  */
 
 // : Includes
-require_once dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+/**
+ *
+ * @param string $search_directory_starting_point
+ * @return string
+ */
+function findVendorDirectory(string $search_directory_starting_point): string
+{
+    $interim = $search_directory_starting_point;
+    $found = (string) '';
+    for ((int) $count = 0; $count < 4; $count ++) {
+        $interim = substr($interim, 0, strrpos($interim, DIRECTORY_SEPARATOR)) . DIRECTORY_SEPARATOR;
+        if (is_dir($interim)) {
+            if ($dh = opendir($interim)) {
+                while (($file = readdir($dh)) !== false) {
+                    if (is_dir($file) === false) {
+                        continue;
+                    }
+                    if (in_array($file, (array) [
+                        '.',
+                        '..'
+                    ])) {
+                        continue;
+                    }
+                    if ($file === 'vendor') {
+                        $found = $interim . $file;
+                        break;
+                    }
+                }
+                closedir($dh);
+            }
+        }
+        if ($found) {
+            return $found . DIRECTORY_SEPARATOR;
+        }
+    }
+    return $found . DIRECTORY_SEPARATOR;
+}
+$path = findVendorDirectory(dirname(realpath(__FILE__)));
+print $path . PHP_EOL;
+require_once $path . 'autoload.php';
+
 // : End
 
 /**
@@ -17,6 +57,7 @@ require_once dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR . '..' . DIRECTOR
  */
 class Dweetio_Client
 {
+
     // : Variables
     /**
      *
@@ -78,6 +119,7 @@ class Dweetio_Client
      * @var string The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
      */
     protected $_hour;
+
     // : End
     // : Public functions
     // : Magic
@@ -119,6 +161,7 @@ class Dweetio_Client
         }
         // : End
     }
+
     // : End
     // : Accessors
     /**
@@ -247,6 +290,7 @@ class Dweetio_Client
     {
         $this->_thing = $thing;
     }
+
     // : End
     // : Locks
     /**
@@ -298,6 +342,7 @@ class Dweetio_Client
         $uri = (string) $this->_baseUri . '/remove/lock/' . $this->_lock . '?key=' . $this->_key;
         return $this->doRequest($uri);
     }
+
     // : End
     // : Dweets
     /**
@@ -379,6 +424,7 @@ class Dweetio_Client
         $uri = (string) $this->_baseUri . '/listen/for/dweets/from/' . urlencode($this->_thing);
         return $this->doRequest($uri);
     }
+
     // : End
     // : Storage
     /**
@@ -426,6 +472,7 @@ class Dweetio_Client
         }
         return $this->doRequest($uri);
     }
+
     // : End
     // : Alerts
     public function alert(string $who, string $when, string $condition, string $key = ""): \stdClass
@@ -442,6 +489,7 @@ class Dweetio_Client
     {
         $uri = (string) $this->_baseUri . '';
     }
+
     // : End
     // : End
     // : Private functions
