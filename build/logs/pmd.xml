@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="@project.version@" timestamp="2017-03-30T09:14:37+02:00">
+<pmd version="@project.version@" timestamp="2017-04-06T14:03:03+02:00">
   <file name="/home/feighen/workspace/dweetio/src/Dweetio.php">
-    <violation beginline="18" endline="527" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="Dweetio_Client" priority="3">
+    <violation beginline="21" endline="538" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="Dweetio_Client" priority="3">
       The class Dweetio_Client has an overall complexity of 65 which is very high. The configured complexity threshold is 50.
     </violation>
-    <violation beginline="155" endline="158" rule="BooleanGetMethodName" ruleset="Naming Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/naming.html#booleangetmethodname" class="Dweetio_Client" method="getQuietly" priority="4">
+    <violation beginline="161" endline="164" rule="BooleanGetMethodName" ruleset="Naming Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/naming.html#booleangetmethodname" class="Dweetio_Client" method="getQuietly" priority="4">
       The 'getQuietly()' method which returns a boolean should be named 'is...()' or 'has...()'
     </violation>
-    <violation beginline="431" endline="431" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+    <violation beginline="441" endline="441" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
       Avoid unused parameters such as '$who'.
     </violation>
-    <violation beginline="431" endline="431" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+    <violation beginline="441" endline="441" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
       Avoid unused parameters such as '$when'.
     </violation>
-    <violation beginline="431" endline="431" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+    <violation beginline="441" endline="441" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
       Avoid unused parameters such as '$condition'.
     </violation>
-    <violation beginline="431" endline="431" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+    <violation beginline="441" endline="441" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
       Avoid unused parameters such as '$key'.
-    </violation>
-    <violation beginline="433" endline="433" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
-      Avoid unused local variables such as '$uri'.
-    </violation>
-    <violation beginline="438" endline="438" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
-      Avoid unused local variables such as '$uri'.
     </violation>
     <violation beginline="443" endline="443" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
       Avoid unused local variables such as '$uri'.
     </violation>
-    <violation beginline="497" endline="525" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Dweetio_Client" method="testFunctionRequirementsAreMet" priority="3">
+    <violation beginline="448" endline="448" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$uri'.
+    </violation>
+    <violation beginline="453" endline="453" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$uri'.
+    </violation>
+    <violation beginline="508" endline="536" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Dweetio_Client" method="testFunctionRequirementsAreMet" priority="3">
       The method testFunctionRequirementsAreMet() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
     </violation>
-    <violation beginline="497" endline="525" rule="NPathComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="Dweetio_Client" method="testFunctionRequirementsAreMet" priority="3">
+    <violation beginline="508" endline="536" rule="NPathComplexity" ruleset="Code Size Rules" package="Noondaysun\Dweetio" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="Dweetio_Client" method="testFunctionRequirementsAreMet" priority="3">
       The method testFunctionRequirementsAreMet() has an NPath complexity of 486. The configured NPath complexity threshold is 200.
     </violation>
   </file>

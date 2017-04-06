@@ -6,17 +6,21 @@ namespace Noondaysun\Dweetio;
  */
 
 // : Includes
-require_once dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+$base = (string) substr(dirname(realpath(__FILE__)), 0, - 3);
+include_once $base . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
 // : End
 
 /**
  *
+ * @package Dweetio
  * @author Feighen Oosterbroek <feighen@noondaysun.org>
  * @license GNU GPL v2
- * @package Dweetio
+ *
  */
 class Dweetio_Client
 {
+
     // : Variables
     /**
      *
@@ -78,6 +82,7 @@ class Dweetio_Client
      * @var string The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
      */
     protected $_hour;
+
     // : End
     // : Public functions
     // : Magic
@@ -119,6 +124,7 @@ class Dweetio_Client
         }
         // : End
     }
+
     // : End
     // : Accessors
     /**
@@ -247,6 +253,7 @@ class Dweetio_Client
     {
         $this->_thing = $thing;
     }
+
     // : End
     // : Locks
     /**
@@ -298,6 +305,7 @@ class Dweetio_Client
         $uri = (string) $this->_baseUri . '/remove/lock/' . $this->_lock . '?key=' . $this->_key;
         return $this->doRequest($uri);
     }
+
     // : End
     // : Dweets
     /**
@@ -379,6 +387,7 @@ class Dweetio_Client
         $uri = (string) $this->_baseUri . '/listen/for/dweets/from/' . urlencode($this->_thing);
         return $this->doRequest($uri);
     }
+
     // : End
     // : Storage
     /**
@@ -426,6 +435,7 @@ class Dweetio_Client
         }
         return $this->doRequest($uri);
     }
+
     // : End
     // : Alerts
     public function alert(string $who, string $when, string $condition, string $key = ""): \stdClass
@@ -442,6 +452,7 @@ class Dweetio_Client
     {
         $uri = (string) $this->_baseUri . '';
     }
+
     // : End
     // : End
     // : Private functions
