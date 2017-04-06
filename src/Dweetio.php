@@ -6,54 +6,17 @@ namespace Noondaysun\Dweetio;
  */
 
 // : Includes
-/**
- *
- * @param string $search_directory_starting_point
- * @return string
- */
-function findVendorDirectory(string $search_directory_starting_point): string
-{
-    $interim = $search_directory_starting_point;
-    $found = (string) '';
-    for ((int) $count = 0; $count < 4; $count ++) {
-        $interim = substr($interim, 0, strrpos($interim, DIRECTORY_SEPARATOR)) . DIRECTORY_SEPARATOR;
-        if (is_dir($interim)) {
-            if ($dh = opendir($interim)) {
-                while (($file = readdir($dh)) !== false) {
-                    if (is_dir($file) === false) {
-                        continue;
-                    }
-                    if (in_array($file, (array) [
-                        '.',
-                        '..'
-                    ])) {
-                        continue;
-                    }
-                    if ($file === 'vendor') {
-                        $found = $interim . $file;
-                        break;
-                    }
-                }
-                closedir($dh);
-            }
-        }
-        if ($found) {
-            return $found . DIRECTORY_SEPARATOR;
-        }
-    }
-    return $found . DIRECTORY_SEPARATOR;
-}
-$path = findVendorDirectory(dirname(realpath(__FILE__)));
-print $path . PHP_EOL;
-require_once $path . 'autoload.php';
+$base = (string) substr(dirname(realpath(__FILE__)), 0, - 3);
+include_once $base . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
 // : End
 
 /**
  *
+ * @package Dweetio
  * @author Feighen Oosterbroek <feighen@noondaysun.org>
  * @license GNU GPL v2
- * @package Dweetio
+ *
  */
 class Dweetio_Client
 {
