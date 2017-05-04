@@ -72,14 +72,16 @@ class Dweetio_Client
 
     /**
      *
-     * @var string The calendar date (YYYY-MM-DD) from which you'd like to start your query. The response will be a maximum of one day.
+     * @var string The calendar date (YYYY-MM-DD) from which you'd like to start your query.
+     *      The response will be a maximum of one day.
      *      must be formatted YYYY-mm-dd which is why I've manually converted it to that format
      */
     protected $_date;
 
     /**
      *
-     * @var string The hour of the day represented in the date parameter in 24-hour (00-23) format. If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
+     * @var string The hour of the day represented in the date parameter in 24-hour (00-23) format.
+     *      If this parameter is included, a maximum of 1 hour will be returned starting at this hour.
      */
     protected $_hour;
 
@@ -238,7 +240,8 @@ class Dweetio_Client
     /**
      *
      * @param bool $quietly
-     *            IF TRUE Create a dweet for a thing. This method differs from /dweet/for/{thing} only in that successful dweets result in an HTTP 204 response rather than the typical verbose response.
+     *            IF TRUE Create a dweet for a thing. This method differs from /dweet/for/{thing} only in that
+     *            successful dweets result in an HTTP 204 response rather than the typical verbose response.
      */
     public function setQuietly(bool $quietly)
     {
@@ -407,7 +410,8 @@ class Dweetio_Client
             return $test;
         }
         $date = (string) date('Y-m-d', strtotime($this->_date));
-        $uri = (string) $this->_baseUri . '/get/stored/dweets/for/' . $this->_thing . '?key=' . $this->_key . '&date=' . $date;
+        $uri = (string) $this->_baseUri . '/get/stored/dweets/for/' . $this->_thing . '?key=' . $this->_key;
+        $uri .= '&date=' . $date;
         if ($this->_hour) {
             $uri .= '&hour=' . $this->_hour;
         }
@@ -429,7 +433,8 @@ class Dweetio_Client
             return $test;
         }
         $date = (string) date('Y-m-d', strtotime($this->_date));
-        $uri = (string) $this->_baseUri . '/get/stored/alerts/for/' . $this->_thing . '?key=' . $this->_key . '&date=' . $date;
+        $uri = (string) $this->_baseUri . '/get/stored/alerts/for/' . $this->_thing . '?key=' . $this->_key;
+        $uri .= '&date=' . $date;
         if ($this->_hour) {
             $uri .= '&hour=' . $this->_hour;
         }
@@ -484,10 +489,11 @@ class Dweetio_Client
                 }
                 return $body;
             } else {
-                $this->_logger->err("Invalid response code returned. HTTP Response code returned: " . $res->getStatusCode());
+                $str = (string) "Invalid response code returned. HTTP Response code returned: " . $res->getStatusCode();
+                $this->_logger->err($str);
                 $response = new \stdClass();
                 $response->this = "failed";
-                $response->because = "Invalid response code returned. HTTP Response code returned: " . $res->getStatusCode();
+                $response->because = $str;
                 return $response;
             }
         } catch (\GuzzleHttp\Exception\ClientException $e) {

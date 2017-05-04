@@ -11,15 +11,8 @@
  <error line="59" column="15" severity="warning" message="Property name &quot;$_key&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
  <error line="65" column="15" severity="warning" message="Property name &quot;$_content&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
  <error line="71" column="15" severity="warning" message="Property name &quot;$_quietly&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="75" column="13" severity="warning" message="Line exceeds 120 characters; contains 135 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="78" column="15" severity="warning" message="Property name &quot;$_date&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="82" column="13" severity="warning" message="Line exceeds 120 characters; contains 190 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="84" column="15" severity="warning" message="Property name &quot;$_hour&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="241" column="19" severity="warning" message="Line exceeds 120 characters; contains 201 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="410" column="127" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="432" column="127" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="487" column="125" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
- <error line="490" column="125" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="79" column="15" severity="warning" message="Property name &quot;$_date&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
+ <error line="86" column="15" severity="warning" message="Property name &quot;$_hour&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
 </file>
 </checkstyle>
 
