@@ -35,8 +35,4 @@ $success = $dweet->dweetFor(false);
 var_dump($success);
 
 sleep(5);
-$listen = $dweet->listenForDweetsFrom();
-for ($i = 0; $i < 2; $i ++) {
-    $success = $dweet->dweetFor(true);
-    sleep(5);
-}
+
