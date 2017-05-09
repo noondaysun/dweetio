@@ -8,4 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 ### Changed
+
+## [0.1.0] - 2017-05-09
+### Added
+- Added to examples/dweetio.php a check for ListenForDweetsFrom()
+
+### Changed
 - Some code style violations fixed in src/Dweetio.php
+- added a version number to composer.json
