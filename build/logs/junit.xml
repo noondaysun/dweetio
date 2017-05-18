@@ -1,11 +1,391 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="dweetio" tests="4" assertions="13" failures="0" errors="0" time="2.725666">
-    <testsuite name="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="4" assertions="13" failures="0" errors="0" time="2.725666">
-      <testcase name="testDweetingForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="67" assertions="3" time="0.015251"/>
-      <testcase name="testDweetingForSuccess" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="84" assertions="7" time="1.663835"/>
-      <testcase name="testQuietlyDweetingFor" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="110" assertions="0" time="0.002018"/>
-      <testcase name="testGettingLatestDweetsForFailure" class="Noondaysun\Dweetio\Tests\DweetioTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="117" assertions="3" time="1.044562"/>
+  <testsuite name="dweetio" tests="1" assertions="0" failures="0" errors="0" time="0.030081">
+    <testsuite name="Noondaysun\Dweetio\DweetioClientTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.030081">
+      <testcase name="testDoRequest_WithBadURI_RetunsAnObject" class="Noondaysun\Dweetio\DweetioClientTest" file="/home/feighen/workspace/dweetio/tests/DweetioTest.php" line="7" assertions="0" time="0.030081">
+        <system-out>/home/feighen/workspace/dweetio/tests/DweetioTest.php:12:
+class PHPUnit_Framework_MockObject_MockBuilder#265 (14) {
+  private $testCase =&gt;
+  class Noondaysun\Dweetio\DweetioClientTest#267 (38) {
+    protected $backupGlobals =&gt;
+    bool(false)
+    protected $backupGlobalsBlacklist =&gt;
+    array(0) {
+    }
+    protected $backupStaticAttributes =&gt;
+    NULL
+    protected $backupStaticAttributesBlacklist =&gt;
+    array(0) {
+    }
+    protected $runTestInSeparateProcess =&gt;
+    bool(false)
+    protected $preserveGlobalState =&gt;
+    bool(true)
+    private $inIsolation =&gt;
+    bool(false)
+    private $data =&gt;
+    array(0) {
+    }
+    private $dataName =&gt;
+    string(0) ""
+    private $useErrorHandler =&gt;
+    NULL
+    private $expectedException =&gt;
+    NULL
+    private $expectedExceptionMessage =&gt;
+    string(0) ""
+    private $expectedExceptionMessageRegExp =&gt;
+    string(0) ""
+    private $expectedExceptionCode =&gt;
+    NULL
+    private $name =&gt;
+    string(39) "testDoRequest_WithBadURI_RetunsAnObject"
+    private $dependencies =&gt;
+    array(0) {
+    }
+    private $dependencyInput =&gt;
+    array(0) {
+    }
+    private $iniSettings =&gt;
+    array(0) {
+    }
+    private $locale =&gt;
+    array(0) {
+    }
+    private $mockObjects =&gt;
+    array(0) {
+    }
+    private $mockObjectGenerator =&gt;
+    NULL
+    private $status =&gt;
+    NULL
+    private $statusMessage =&gt;
+    string(0) ""
+    private $numAssertions =&gt;
+    int(0)
+    private $result =&gt;
+    class PHPUnit_Framework_TestResult#17 (30) {
+      protected $passed =&gt;
+      array(0) {
+        ...
+      }
+      protected $errors =&gt;
+      array(0) {
+        ...
+      }
+      protected $failures =&gt;
+      array(0) {
+        ...
+      }
+      protected $warnings =&gt;
+      array(0) {
+        ...
+      }
+      protected $notImplemented =&gt;
+      array(0) {
+        ...
+      }
+      protected $risky =&gt;
+      array(0) {
+        ...
+      }
+      protected $skipped =&gt;
+      array(0) {
+        ...
+      }
+      protected $listeners =&gt;
+      array(2) {
+        ...
+      }
+      protected $runTests =&gt;
+      int(1)
+      protected $time =&gt;
+      int(0)
+      protected $topTestSuite =&gt;
+      class PHPUnit_Framework_TestSuite#8 (12) {
+        ...
+      }
+      protected $codeCoverage =&gt;
+      class SebastianBergmann\CodeCoverage\CodeCoverage#262 (19) {
+        ...
+      }
+      protected $convertErrorsToExceptions =&gt;
+      bool(true)
+      protected $stop =&gt;
+      bool(false)
+      protected $stopOnError =&gt;
+      bool(false)
+      protected $stopOnFailure =&gt;
+      bool(false)
+      protected $stopOnWarning =&gt;
+      bool(false)
+      protected $beStrictAboutTestsThatDoNotTestAnything =&gt;
+      bool(false)
+      protected $beStrictAboutOutputDuringTests =&gt;
+      bool(false)
+      protected $beStrictAboutTodoAnnotatedTests =&gt;
+      bool(false)
+      protected $beStrictAboutResourceUsageDuringSmallTests =&gt;
+      bool(false)
+      protected $enforceTimeLimit =&gt;
+      bool(false)
+      protected $timeoutForSmallTests =&gt;
+      int(1)
+      protected $timeoutForMediumTests =&gt;
+      int(10)
+      protected $timeoutForLargeTests =&gt;
+      int(60)
+      protected $stopOnRisky =&gt;
+      bool(false)
+      protected $stopOnIncomplete =&gt;
+      bool(false)
+      protected $stopOnSkipped =&gt;
+      bool(false)
+      protected $lastTestFailed =&gt;
+      bool(false)
+      private $registerMockObjectsFromTestArgumentsRecursively =&gt;
+      bool(false)
+    }
+    private $testResult =&gt;
+    NULL
+    private $output =&gt;
+    string(0) ""
+    private $outputExpectedRegex =&gt;
+    NULL
+    private $outputExpectedString =&gt;
+    NULL
+    private $outputCallback =&gt;
+    bool(false)
+    private $outputBufferingActive =&gt;
+    bool(true)
+    private $outputBufferingLevel =&gt;
+    int(1)
+    private $snapshot =&gt;
+    NULL
+    private $prophet =&gt;
+    NULL
+    private $beStrictAboutChangesToGlobalState =&gt;
+    NULL
+    private $registerMockObjectsFromTestArgumentsRecursively =&gt;
+    bool(false)
+    private $warnings =&gt;
+    array(0) {
+    }
+    private $groups =&gt;
+    array(1) {
+      [0] =&gt;
+      string(7) "default"
+    }
+  }
+  private $type =&gt;
+  string(13) "DweetioClient"
+  private $methods =&gt;
+  array(0) {
+  }
+  private $methodsExcept =&gt;
+  array(0) {
+  }
+  private $mockClassName =&gt;
+  string(0) ""
+  private $constructorArgs =&gt;
+  array(0) {
+  }
+  private $originalConstructor =&gt;
+  bool(true)
+  private $originalClone =&gt;
+  bool(true)
+  private $autoload =&gt;
+  bool(true)
+  private $cloneArguments =&gt;
+  bool(false)
+  private $callOriginalMethods =&gt;
+  bool(false)
+  private $proxyTarget =&gt;
+  NULL
+  private $allowMockingUnknownTypes =&gt;
+  bool(true)
+  private $generator =&gt;
+  class PHPUnit_Framework_MockObject_Generator#266 (2) {
+    private $legacyBlacklistedMethodNames =&gt;
+    array(75) {
+      '__CLASS__' =&gt;
+      bool(true)
+      '__DIR__' =&gt;
+      bool(true)
+      '__FILE__' =&gt;
+      bool(true)
+      '__FUNCTION__' =&gt;
+      bool(true)
+      '__LINE__' =&gt;
+      bool(true)
+      '__METHOD__' =&gt;
+      bool(true)
+      '__NAMESPACE__' =&gt;
+      bool(true)
+      '__TRAIT__' =&gt;
+      bool(true)
+      '__clone' =&gt;
+      bool(true)
+      '__halt_compiler' =&gt;
+      bool(true)
+      'abstract' =&gt;
+      bool(true)
+      'and' =&gt;
+      bool(true)
+      'array' =&gt;
+      bool(true)
+      'as' =&gt;
+      bool(true)
+      'break' =&gt;
+      bool(true)
+      'callable' =&gt;
+      bool(true)
+      'case' =&gt;
+      bool(true)
+      'catch' =&gt;
+      bool(true)
+      'class' =&gt;
+      bool(true)
+      'clone' =&gt;
+      bool(true)
+      'const' =&gt;
+      bool(true)
+      'continue' =&gt;
+      bool(true)
+      'declare' =&gt;
+      bool(true)
+      'default' =&gt;
+      bool(true)
+      'die' =&gt;
+      bool(true)
+      'do' =&gt;
+      bool(true)
+      'echo' =&gt;
+      bool(true)
+      'else' =&gt;
+      bool(true)
+      'elseif' =&gt;
+      bool(true)
+      'empty' =&gt;
+      bool(true)
+      'enddeclare' =&gt;
+      bool(true)
+      'endfor' =&gt;
+      bool(true)
+      'endforeach' =&gt;
+      bool(true)
+      'endif' =&gt;
+      bool(true)
+      'endswitch' =&gt;
+      bool(true)
+      'endwhile' =&gt;
+      bool(true)
+      'eval' =&gt;
+      bool(true)
+      'exit' =&gt;
+      bool(true)
+      'expects' =&gt;
+      bool(true)
+      'extends' =&gt;
+      bool(true)
+      'final' =&gt;
+      bool(true)
+      'for' =&gt;
+      bool(true)
+      'foreach' =&gt;
+      bool(true)
+      'function' =&gt;
+      bool(true)
+      'global' =&gt;
+      bool(true)
+      'goto' =&gt;
+      bool(true)
+      'if' =&gt;
+      bool(true)
+      'implements' =&gt;
+      bool(true)
+      'include' =&gt;
+      bool(true)
+      'include_once' =&gt;
+      bool(true)
+      'instanceof' =&gt;
+      bool(true)
+      'insteadof' =&gt;
+      bool(true)
+      'interface' =&gt;
+      bool(true)
+      'isset' =&gt;
+      bool(true)
+      'list' =&gt;
+      bool(true)
+      'namespace' =&gt;
+      bool(true)
+      'new' =&gt;
+      bool(true)
+      'or' =&gt;
+      bool(true)
+      'print' =&gt;
+      bool(true)
+      'private' =&gt;
+      bool(true)
+      'protected' =&gt;
+      bool(true)
+      'public' =&gt;
+      bool(true)
+      'require' =&gt;
+      bool(true)
+      'require_once' =&gt;
+      bool(true)
+      'return' =&gt;
+      bool(true)
+      'static' =&gt;
+      bool(true)
+      'switch' =&gt;
+      bool(true)
+      'throw' =&gt;
+      bool(true)
+      'trait' =&gt;
+      bool(true)
+      'try' =&gt;
+      bool(true)
+      'unset' =&gt;
+      bool(true)
+      'use' =&gt;
+      bool(true)
+      'var' =&gt;
+      bool(true)
+      'while' =&gt;
+      bool(true)
+      'xor' =&gt;
+      bool(true)
+    }
+    private $blacklistedMethodNames =&gt;
+    array(10) {
+      '__CLASS__' =&gt;
+      bool(true)
+      '__DIR__' =&gt;
+      bool(true)
+      '__FILE__' =&gt;
+      bool(true)
+      '__FUNCTION__' =&gt;
+      bool(true)
+      '__LINE__' =&gt;
+      bool(true)
+      '__METHOD__' =&gt;
+      bool(true)
+      '__NAMESPACE__' =&gt;
+      bool(true)
+      '__TRAIT__' =&gt;
+      bool(true)
+      '__clone' =&gt;
+      bool(true)
+      '__halt_compiler' =&gt;
+      bool(true)
+    }
+  }
+}
+</system-out>
+      </testcase>
     </testsuite>
   </testsuite>
 </testsuites>

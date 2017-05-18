@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="2.5.1">
+<file name="/home/feighen/workspace/dweetio/src/Things.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Stripe.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Accounts.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Disputes.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Locks.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Storage.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Collections.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
 <file name="/home/feighen/workspace/dweetio/src/Dweetio.php">
- <error line="1" column="1" severity="warning" message="A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both. The first symbol is defined on line 21 and the first side effect is on line 9." source="PSR1.Files.SideEffects.FoundWithSymbols"/>
- <error line="21" column="1" severity="error" message="Class name &quot;Dweetio_Client&quot; is not in camel caps format" source="Squiz.Classes.ValidClassName.NotCamelCaps"/>
- <error line="29" column="15" severity="warning" message="Property name &quot;$_baseUri&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="35" column="15" severity="warning" message="Property name &quot;$_client&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="41" column="15" severity="warning" message="Property name &quot;$_logger&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="47" column="15" severity="warning" message="Property name &quot;$_thing&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="53" column="15" severity="warning" message="Property name &quot;$_lock&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="59" column="15" severity="warning" message="Property name &quot;$_key&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="65" column="15" severity="warning" message="Property name &quot;$_content&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="71" column="15" severity="warning" message="Property name &quot;$_quietly&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="79" column="15" severity="warning" message="Property name &quot;$_date&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
- <error line="86" column="15" severity="warning" message="Property name &quot;$_hour&quot; should not be prefixed with an underscore to indicate visibility" source="PSR2.Classes.PropertyDeclaration.Underscore"/>
+ <error line="1" column="1" severity="warning" message="A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both. The first symbol is defined on line 19 and the first side effect is on line 8." source="PSR1.Files.SideEffects.FoundWithSymbols"/>
+ <error line="19" column="1" severity="error" message="Class name &quot;Dweetio_Client&quot; is not in camel caps format" source="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+ <error line="140" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Alerts.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Users.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="/home/feighen/workspace/dweetio/src/Dweets.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="2" column="29" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
 </file>
 </checkstyle>
 

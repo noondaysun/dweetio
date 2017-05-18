@@ -6,10 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
--
 
 ### Changed
--
+- Broke single object down into individual objects as per dweetpro.io (Alerts, Storage etc.) that extend the original object
 
 ## [0.1.0] - 2017-05-09
 ### Added
