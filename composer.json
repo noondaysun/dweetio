@@ -25,6 +25,7 @@
     "require-dev": {
         "mayflower/php-codebrowser": "^2.2",
         "pdepend/pdepend" : "^2.5",
+        "phing/phing": "^2.16",
         "phploc/phploc": "^5.0",
         "phpmd/phpmd" : "^2.7",
         "phpunit/phpunit": "^8.4",
@@ -32,6 +33,7 @@
         "sebastian/phpcpd": "*"
     },
     "scripts": {
+        "build": "phing build",
         "insights": "phpinsights analyse -n -- ./src"
     },
     "version":"0.2.0"
